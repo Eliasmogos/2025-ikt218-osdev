@@ -36,3 +36,5 @@ void init_gdt(void) {
     // Load the GDT using assembly function
     gdt_flush((uint32_t)&gdt_ptr);
 }
+
+

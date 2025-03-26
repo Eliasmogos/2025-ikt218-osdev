@@ -12,4 +12,8 @@ void kernel_main(void) {
     
     // Print Hello World
     terminal_writestring("Hello World!\n");
+
+    // Test interrupts
+    asm volatile ("int $0x3");
+    asm volatile ("int $0x4");  
 }
